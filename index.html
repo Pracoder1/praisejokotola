@@ -1,0 +1,569 @@
+<!doctype html>
+<html lang="EN">
+    <head>
+        <title>Praise Jokotola</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Josefin Sans">
+        <link rel="stylesheet" href="Praise Jokotola.css">
+        <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.slim.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    </head>
+    <body>
+        <!--header section starts-->
+        <header class="border row container-fluid ac">
+            <div class="container btn-group col ps-5">
+                <a id="datetime" class="text-decoration-none text-dark p-2 border-end" href="#">🕒 Timing</a>
+                <a class="text-decoration-none text-dark p-2" href="#">☏ +234-813-8562-486</a>
+                <a class="text-decoration-none text-dark p-2 border-start" href="#">✉ praisejokotola@gmail.com</a>
+            </div>
+            <div class="container col row ps-5">
+                <div class="dropdown col" style="z-index: 1021;">
+                    <a type="button" class="text-decoration-none dropdown-toggle text-dark pt-2" data-bs-toggle="dropdown">EN</a>
+                    <ul class="dropdown-menu ">
+                        <li>
+                            <a class="dropdown-item text-decoration-none" href="#">IT</a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item text-decoration-none" href="#">GE</a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item text-decoration-none" href="#">ST</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col">
+                    <button class="btn btn-dark"><a href="joko.pdf" style="text-decoration: none;" class="text-light">RESUME</a></button>
+                </div>
+            </div>
+        </header>
+        <script>
+            //Get current date and time
+            var now = new Date();
+            var datetime = now.toLocaleString();
+
+            //Insert date and time into html
+            document.getElementById("datetime").innerHTML = datetime;
+        </script>
+        <!--header ends-->
+
+        <!--Home section-->
+        <div class="navbar sticky-top">
+            <div>
+                <img src="brand.png">
+            </div>
+            <div class="navbar-toggle" onclick="toggleNavbar()">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="navbar-list">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#exp">Experience</a></li>
+                <li><a href="#service">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#works">Works</a></li>
+                <li><a href="joko.pdf">RESUME</a></li>
+            </ul>
+        </div>
+        <script>
+            function toggleNavbar() {
+                var navbarList = document.querySelector('.navbar-list');
+                navbarList.classList.toggle('show');
+            }
+        </script>
+
+        <section id="home" class="ani bg-image container-fluid justify-content-center align-items-center">
+            <br />
+            <h1 class="an display1 text-white pt-4 mt-5 pb-0 mb-0"><strong>Hi There :)</strong></h1>
+            <h1 class="text-white pt-0 mt-0"><span class="text-primary">Welcome</span> to my <span class="text-primary">profile</span></h1>
+            <div class="typin">
+                <h5 class="text-light pt-5"><span class="typed-text"></span><span class="cursor"></span>
+                </h5>
+            </div>
+            <button class="btn btn-primary btn-lg btn-sm mt-4"><a href="#about" style="text-decoration: none;" class="text-white">About Me</a></button>
+        </section>
+        <!--Home section ends-->
+
+        <!--About me section for desktops-->
+        <section id="about" class="container-fluid bout">
+            <div class="container-fluid d-flex ps-5 ms-5 pt-5">
+                <div class="container p-5 m-5">
+                    <div class="rect"></div>
+                    <h1><span style="font-weight: 1000;">About</span> <span style="font-weight: 400;">Me</span></h1>
+                    <h4>Full-stack Developer</h4>
+                    <p class="mt-4">An accomplished Full-stack Developer with broad expertise in Frontend <br />(website & mobile) and Backend development.
+                       Skilled professional with unsurpassed<br /> critical strategic planning, and interpersonal skills. Adept at cultivating 
+                       productive <br />industry relationship for organization technological advancement.<br /><br />
+                       I've a Bachelor's degree in Agricultural Engineering, but my passion has always been to develop websites and mobile apps. Due to my strong 
+                       passion for web and mobile app<br > programming, I have got few online certifications in JS, HTML, PHP and CSS.</p>
+                </div>
+                <div class="container">
+                    <img src="praise.jpg" alt="image" class="rounded image-fluid img-thumbnail w-50 mt-5 pt-5">
+                </div>
+            </div>
+            <div class="container-fluid d-flex justify-content-center">
+                <div class="container bg-dark text-white p-5 m-3 rounded-top rounded-4">
+                    <h3>Have a sneak peek at some technologies I use</h3>
+                </div>
+                <div class="container bg-dark m-3 p-2 rounded-top rounded-4 text-center text-info">
+                    <img src="logo192.png" class="img-fluid" style="width: 150px; height: 150px;" alt="react"><br />
+                    <h6 class="mt-2">REACT</h6>
+                </div>
+                <div class="container bg-dark p-2 m-3 rounded-top rounded-4 text-center text-danger">
+                    <img src="angular.png" class="img-fluid" style="width: 150px; height: 150px;" alt="angular"><br />
+                    <h6 class="mt-2">ANGULAR</h6>
+                </div>
+                <div class="container bg-dark p-2 pt-4 m-3 rounded-top rounded-4 text-center text-warning">
+                    <img src="logo_html.png" class="img-fluid" style="width: 130px; height: 130px;" alt="html"><br />
+                    <h6 class="mt-2">HTML</h6>
+                </div>
+                <div class="container bg-dark p-2 pt-4 m-3 rounded-top rounded-4 text-center text-primary">
+                    <img src="logo_css.png" class="img-fluid" style="width: 130px; height: 130px;" alt="CSS"><br />
+                    <h6 class="mt-2">CSS</h6>
+                </div>
+                <div class="container bg-dark p-2 m-3 rounded-top rounded-4 text-center text-info">
+                    <img src="php.png" class="img-fluid" style="width: 150px; height: 150px;" alt="PHP"><br />
+                    <h6 class="mt-2">PHP</h6>
+                </div>
+            </section>
+        <!--About me section ends-->
+
+        <!--About me section for mobile-->
+        <section id="about" class="abot p-4 pt-5 mt-5">
+            <div class="abot1">
+                <div class="">
+                    <h1><span style="font-weight: 700;">About</span> <span style="font-weight: 400;">Me</span></h1>
+                    <div class="rectabot">
+                        <div class="rectabot1"></div><div class="rectabot2"></div>
+                    </div>
+                    <div>
+                        <div class="flex-container">
+                            <img src="praise.jpg" alt="image" class="img-fluid">
+                            <p><span><h6>Full-stack Developer.</h6></span>An accomplished Full-stack Developer with broad expertise in Frontend (website & mobile) and Backend development.
+                               Skilled professional with unsurpassed critical strategic planning, and interpersonal skills. Adept at cultivating 
+                               productive industry relationship for organization technological advancement.<br />
+                               I've a Bachelor's degree in Economics, but my passion has always been to develop websites and mobile apps. Due to my strong 
+                               passion for web and mobile app programming, I have got few online certifications in JS, HTML, PHP and CSS.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="techu bg-dark text-light p-3 rounded-4">
+                <div class="">
+                    <h3>Technologies Used</h3>
+                </div>
+                <div class="techx">
+                    <div class="m-2">
+                        <img src="logo_html.png" class="img-fluid" alt="html">
+                        <h6 class="">HTML</h6>
+                    </div>
+                    <div class="m-2">
+                        <img src="logo_css.png" class="img-fluid" alt="CSS">
+                        <h6 class="">CSS</h6>
+                    </div>
+                    <div class="m-2">
+                        <img src="logo192.png" class="img-fluid" alt="react">
+                        <h6 class="">REACT</h6>
+                    </div>
+                    <div class="m-2">
+                        <img src="angular.png" class="img-fluid" alt="angular">
+                        <h6 class="">ANGULAR</h6>
+                    </div>
+                    <div class="m-2">
+                        <img src="php.png" class="img-fluid" alt="PHP">
+                        <h6 class="">PHP</h6>
+                    </div>
+                    <div class="m-2">
+                        <img src="bootsrap-small.png" class="img-fluid" alt="bootstrap">
+                        <h6 class="">BOOTSTRAP</h6>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--about me for mobile ends-->
+
+        <!--Experience and workdone in the past for desktop-->
+        <section id="exp" class="exp10 container fluid">
+            <div class="container row p-5 justify-content-center m-5">
+                <div class="container col">
+                    <img src="15.jpeg" class="img-fluid rounded-top rounded-4" alt="im_age">
+                </div>
+                <div class="container col">
+                    <h1 class="">Experience</h1>
+                    <div class="rect"></div><br />
+                    <p>I have worked in many known firms from multi-national companies, huge coperations, to startups. 
+                    My experience working as a Website and Mobile app Developer for Les Gilles Limited, upgraded my 
+                    skills in Angular, Angularfire library, Ionic, Node JS and Typescipt.</p>
+                    <p>Currently, I work as a part-time Fullstack Developer for AKI solutions and my skills in 
+                    writing Backend logic with PHP/Laravel has greatly improved. Also, my Frontend 
+                    skills in Angular Js has also taken a boost.</p>
+                    <p>I am capable of building a functional and organized website and mobile app that is appealing and 
+                    loads fast. I have single handedly and also a team member, developed and deployed several apps 
+                    which are on Play Store and websites which are fully functional and live.</p>
+                </div>
+            </div>
+        </section>
+        <!--Experience and workdone in the past for desktop ends-->
+
+        <!--Experience and workdone in the past for mobile-->
+        <section id="exp" class="exp0 container fluid">
+            <div class="container justify-content-center pt-5 mt-5">
+                <!--<div class="container col">
+                    <img src="15.jpeg" class="img-fluid rounded-top rounded-4" alt="im_age">
+                </div>-->
+                    <h1 class="">Experience</h1>
+                    <div class="rect0"></div><br />
+                    <p>I have worked in many known firms from multi-national companies, huge coperations, to startups. 
+                    My experience working as a Website and Mobile app Developer for Les Gilles Limited, upgraded my 
+                    skills in Angular, Angularfire library, Ionic, Node JS and Typescipt.</p>
+                    <p>Currently, I work as a part-time Fullstack Developer for AKI solutions and my skills in 
+                    writing Backend logic with PHP/Laravel has greatly improved. Also, my Frontend 
+                    skills in Angular Js has also taken a boost.</p>
+                    <p>I am capable of building a functional and organized website and mobile app that is appealing and 
+                    loads fast. I have single handedly and also a team member, developed and deployed several apps 
+                    which are on Play Store and websites which are fully functional and live.</p>
+            </div>
+        </section>
+        <!--Experience and workdone in the past for mobile ends-->
+
+        <!--Service section for desktop-->
+        <div id="service" class="service10 bg-image justify-content-center align-items-center text-light p-5 container-fluid" style="background-image: url('wb.jpg'); height: 100vh; text-align: left; border-radius: 100px 100px 0px 0px;">
+            <h1 class="pt-5" style="font-family: Josefin Sans; font-size: 60px; text-align: center;">Services</h1>
+            <div class="rect1"></div><br />
+            <div class="row p-3" style="margin-right: auto; margin-left: auto; width: 50%; font-size: 25px;">
+                <div class="col container">
+                    <ul style="list-style-image: url('git.png');">
+                        <li>Frontend Development</li>
+                    </ul>
+                    <ul style="list-style-image: url('git.png')">
+                        <li>Backend Development</li>
+                    </ul>
+                    <ul style="list-style-image: url('git.png')">
+                        <li>Mobile App Development</li>
+                    </ul>
+                    <ul style="list-style-image: url('git.png')">
+                        <li>Graphics & UI Design</li>
+                    </ul>
+                    <ul style="list-style-image: url('git.png')">
+                        <li>Database Management</li>
+                    </ul>
+                    <ul style="list-style-image: url('git.png')">
+                        <li>Social Media Management</li>
+                    </ul>
+                </div>
+                <div class="col container">
+                    <ul style="list-style-image: url('git.png');">
+                        <li>Autocad Design</li>
+                    </ul>
+                    <ul style="list-style-image: url('git.png');">
+                        <li>Customer & Staff Relations</li>
+                    </ul>
+                    <ul style="list-style-image: url('git.png');">
+                        <li>Research & Analysis Project</li>
+                    </ul>
+                    <ul style="list-style-image: url('git.png');">
+                        <li>Competitive Intelligence</li>
+                    </ul>
+                    <ul style="list-style-image: url('git.png');">
+                        <li>Artificial Intelligence</li>
+                    </ul>
+                    <ul style="list-style-image: url('git.png');">
+                        <li>Communication</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!--Service section for desktop ends-->
+
+        <!--Service section for mobile-->
+        <div id="service" class="service0 bg-image justify-content-center align-items-center text-light mt-5 container-fluid" style="text-align: center; background-image: url('wb.jpg'); height: 100vh; text-align: left; border-radius: 20px 20px 0px 0px;">
+            <h1 class="" style="font-family: Josefin Sans; font-size: 40px; text-align: center; padding-top: 100px;">Services</h1>
+            <div class="rect00"></div><br />
+            <div class="container-fluid">
+                <div class="container">
+                    <ul>
+                        <li>Frontend Development</li>
+                    </ul>
+                    <ul>
+                        <li>Backend Development</li>
+                    </ul>
+                    <ul>
+                        <li>Mobile App Development</li>
+                    </ul>
+                    <ul>
+                        <li>Graphics & UI Design</li>
+                    </ul>
+                    <ul>
+                        <li>Database Management</li>
+                    </ul>
+                    <ul>
+                        <li>Social Media Management</li>
+                    </ul>
+                </div>
+                <div class="container">
+                    <ul>
+                        <li>Autocad Design</li>
+                    </ul>
+                    <ul>
+                        <li>Customer & Staff Relations</li>
+                    </ul>
+                    <ul>
+                        <li>Research & Analysis Project</li>
+                    </ul>
+                    <ul>
+                        <li>Competitive Intelligence</li>
+                    </ul>
+                    <ul>
+                        <li>Artificial Intelligence</li>
+                    </ul>
+                    <ul>
+                        <li>Communication</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!--Service section for mobile ends-->
+
+        <!--contact section for desktop-->
+        <section id="contact" class="contact10 bg-image justify-content-center align-items-center text-light p-5 container-fluid" style="background-image: url('drop.jpg'); height: 107vh; text-align: center; border-radius: 0px 0px 100px 100px;">
+            <div class="mt-5 pt-5">
+                <h1 class="P-2 pt-5 mt-5"><span class="text-primary">Contact</span> Me</h1>
+                <h3 class="p-2">Do you have a billion dollars <span class="text-primary">idea?</span></h3>
+                <h5 class="P-2">Well, I can build it for you. Reach me using any of the links below</h5>
+            </div>
+            <div class="container row mt-5 p-5" style="margin-left: auto; margin-right: auto;">
+                <div class="col">
+                    <img src="location.png" style="width: 50px; height: 50px;">
+                    <h3>Address</h3>
+                    <h5>29 Marina Rd, Lagos Island,<br /> Lagos, Nigeria.</h5>
+                </div>
+                <div class="col">
+                    <img src="mail-box.png" style="width: 50px; height: 50px;">
+                    <h3>Email Address</h3>
+                    <h5>praisejokotola@gmail.com,<br /> jokotolasimiop4@gmail.com</h5>
+                </div>
+                <div class="col">
+                    <img src="phone.png" style="width: 50px; height: 50px;">
+                    <h3>Phone Numbers</h3>
+                    <h5>08138562486,<br /> 07050215487</h5>
+                </div>
+            </div>
+            <div class="shadow-lg mb-5 pt-5 pb-5" style="width: 500px; margin-left:auto; margin-right:auto;">
+                <h4>Well you might love <span class="text-primary">forms</span> instead</h4>
+                <p>Fill in the fields below and I'll get back to you shortly.</p>
+                <div style="margin-left: auto; margin-right: auto; padding-left: 75px; padding-right: auto;">
+                    <form style="text-align: left;">
+                        <label for="name" style="font-size: 20px;">Name:</label><br />
+                        <input type="text" name="Name" placeholder="John Doe" style="width: 350px; height: 40px; outline: none;" required><br /><br />
+                        <label for="email" style="font-size: 20px;">E-mail Address:</label><br />
+                        <input type="text" name="email" placeholder="email@example.com" style="width: 350px; height: 40px; outline: none;" required><br /><br />
+                        <label for="message" style="font-size: 20px;" class="text-dark">Message:</label><br />
+                        <textarea type="text" name="message" placeholder="Type your message" style="width: 350px; height: 40px; outline: none; resize: none;" required></textarea><br /><br />
+                        <input type="submit" value="submit" style="width: 350px; height: 40px; border-radius: 0px; font-size: 18px;" class="btn btn-primary">
+                    </form>
+                </div>
+            </div>
+            <div class="pt-5 text-dark">
+                <h1 class="text-primary pt-5 pb-3">Other Platforms</h1>
+                <p>You can also check out my profile and get to know more about me using any of the social media links below</p>
+                <div class="row" style="width: 40%; margin-left: auto; margin-right: auto;">
+                    <div class="col">
+                        <img src="fb.png">
+                    </div>
+                    <div class="col pt-1">
+                        <img src="X.png" style="width: 41px; height: 41px;">
+                    </div>
+                    <div class="col">
+                        <img src="linkedin.png">
+                    </div>
+                    <div class="col">
+                        <img src="git.png">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--contact section for desktop ends-->
+
+        <!--contact section for mobile-->
+        <section id="contact" class="contact0 bg-image justify-content-center align-items-center text-light container-fluid" style="background-image: url('drop.jpg'); height: 100vh; width: 100vw; margin-top: -150px; text-align: center; border-radius: 0px 0px 20px 20px;">
+            <div class="mt-5 pt-5">
+                <h1 class="P-2 pt-5 mt-5"><span class="text-primary">Contact</span> Me</h1>
+                <h4 class="p-2">Do you have a billion dollars <span class="text-primary">idea?</span></h3>
+                <p class="P-2">Well, I can build it for you. Reach me using any of the links below</p>
+            </div>
+            <div class="container pt-2" style="margin-left: auto; margin-right: auto;">
+                <div>
+                    <img src="location.png" style="width: 50px; height: 50px;">
+                    <h6>Address</h6>
+                    <p>29 Marina Rd, Lagos Island,<br /> Lagos, Nigeria.</p>
+                </div>
+                <div>
+                    <img src="mail-box.png" style="width: 50px; height: 50px;">
+                    <h6>Email Address</h6>
+                    <p>praisejokotola@gmail.com,<br /> jokotolasimiop4@gmail.com</p>
+                </div>
+                <div>
+                    <img src="phone.png" style="width: 50px; height: 50px;">
+                    <h6>Phone Numbers</h6>
+                    <p>08138562486,<br /> 07050215487</p>
+                </div>
+            </div>
+            <div class="shadow-lg mt-5 pt-3 pb-5 text-dark" style="margin-left:auto; margin-right:auto; font-size: 14px;">
+                <h6>Well you might love <span class="text-primary">forms</span> instead</h6>
+                <p>Fill in the fields below and I'll get back to you shortly.</p>
+                <div style="margin-left: auto; margin-right: auto; padding-left: 40px;">
+                    <form style="text-align: left;">
+                        <label for="name" style="font-size: 16px;">Name:</label><br />
+                        <input type="text" name="Name" placeholder="John Doe" style="width: 220px; height: 30px; outline: none;" required><br /><br />
+                        <label for="email" style="font-size: 16px;">E-mail Address:</label><br />
+                        <input type="text" name="email" placeholder="email@example.com" style="width: 220px; height: 30px; outline: none;" required><br /><br />
+                        <label for="message" style="font-size: 16px;" class="text-dark">Message:</label><br />
+                        <textarea type="text" name="message" placeholder="Type your message" style="width: 220px; height: 30px; outline: none; resize: none;" required></textarea><br /><br />
+                        <input type="submit" value="submit" style="width: 220px; height: 30px; border-radius: 0px; font-size: 16px;" class="btn btn-primary">
+                    </form>
+                </div>
+            </div>
+            <div class="pt-5 text-dark">
+                <h1 class="text-primary pt-5 pb-3">Other Platforms</h1>
+                <p>You can also check out my profile and get to know more about me using any of the social media links below</p>
+                <div style="margin-left: auto; margin-right: auto; display: flex; overflow: scroll; width: 50%;">
+                    <div>
+                        <img src="fb.png">
+                    </div>
+                    <div class="pt-1">
+                        <img src="X.png" style="width: 41px; height: 41px;">
+                    </div>
+                    <div>
+                        <img src="linkedin.png">
+                    </div>
+                    <div>
+                        <img src="git.png">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--contact section for mobile ends-->
+
+        <!--works section for desktop-->
+        <div id="works" class="works10 text-dark pt-5 container-fluid" style="text-align: left; margin-top: 500px;">
+            <div class="mt-5 pt-5">
+                <h1>Previous <span class="text-primary">Works:</span></h1>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <img src="churchvest.png" style="width: 300px; height: 200px; border-radius: 20px;">
+                </div>
+                <div class="col">
+                    <img src="desi.gn.png" style="width: 300px; height: 200px; border-radius: 20px;">
+                </div>
+                <div class="col">
+                    <img src="fashion-admin.png" style="width: 300px; height: 200px; border-radius: 20px;">
+                </div>
+                <div class="col">
+                    <img src="fms.png" style="width: 300px; height: 200px; border-radius: 20px;">
+                </div>
+            </div>
+            <div class="row p-5">
+                <div class="col">
+                    <img src="fmsapp.png" style="width: 300px; height: 200px; border-radius: 20px;">
+                </div>
+                <div class="col">
+                    <img src="megatel.png" style="width: 300px; height: 200px; border-radius: 20px;">
+                </div>
+                <div class="col">
+                    <img src="pricing template.png" style="width: 300px; height: 200px; border-radius: 20px;">
+                </div>
+                <div class="col">
+                    <img src="project3.png" style="width: 300px; height: 200px; border-radius: 20px;">
+                </div>
+            </div>
+        </div>
+        <!--works section for desktop ends-->
+
+        <!--works section for mobile-->
+        <div id="works" class="works0 text-dark pt-5 container-fluid" style="text-align: center; margin-top: 700px;">
+            <div class="mt-5 pt-5">
+                <h1>Previous <span class="text-primary">Works:</span></h1>
+            </div>
+            <div style="display: flex; overflow: scroll;">
+                <div>
+                    <img src="churchvest.png" style="width: 250px; height: 180px; border-radius: 10px; padding: 10px;">
+                </div>
+                <div>
+                    <img src="desi.gn.png" style="width: 250px; height: 180px; border-radius: 10px; padding: 10px;">
+                </div>
+                <div>
+                    <img src="fashion-admin.png" style="width: 250px; height: 180px; border-radius: 10px; padding: 10px;">
+                </div>
+                <div>
+                    <img src="fms.png" style="width: 250px; height: 180px; border-radius: 10px; padding: 10px;">
+                </div>
+                <div>
+                    <img src="fmsapp.png" style="width: 250px; height: 180px; border-radius: 20px; padding: 10px;">
+                </div>
+                <div>
+                    <img src="megatel.png" style="width: 250px; height: 180px; border-radius: 20px; padding: 10px;">
+                </div>
+                <div>
+                    <img src="pricing template.png" style="width: 250px; height: 180px; border-radius: 20px; padding: 10px;">
+                </div>
+                <div>
+                    <img src="project3.png" style="width: 250px; height: 180px; border-radius: 20px; padding: 10px;">
+                </div>
+            </div>
+        </div>
+        <!--works section for mobile ends-->
+        <div class="bg-dark text-light container-fluid" style="width: 100vw; height: 40px; text-align: center;">
+            <p class="pt-2">@Praise Jokotola 2023</p>
+        </div>
+
+        <script>
+            const typedTextSpan = document.querySelector(".typed-text");
+            const cursorSpan = document.querySelector(".cursor");
+            
+            const textArray = ["My name is Praise Jokotola, I am a Fullstack Website & Mobile App Developer. I love to create aesthetically pleasing and functional Web & Mobile products. Adept at cultivating productive industry relationship for organization technological advancement."/*, "code snippets"*/];
+            const typingDelay = 30;
+            //const erasingDelay = 100;
+            const newTextDelay= 2000;
+            let textArrayIndex = 0;
+            let charIndex = 0;
+
+            function type() {
+                if(charIndex< textArray[textArrayIndex].length) {
+                    if(!cursorSpan.classList.contains("typing"))cursorSpan.classList.add("typing");
+                    typedTextSpan.textContent += textArray[textArrayIndex].charAt(charIndex);
+                    charIndex++;
+                    setTimeout(type, typingDelay);
+                }
+                else {
+                    cursorSpan.classList.remove("typing");
+                    setTimeout(erase, newTextDelay);
+                }
+            }
+
+            /*function erase() {
+                if(charIndex>0){
+                    if(!cursorSpan.classList.contains("typing")) cursorSpan.classList.add("typing");
+                    typedTextSpan.textContent = textArray[textArrayIndex].substring(0, charIndex-1);
+                    charIndex--;
+                    setTimeout(erase, erasingDelay)
+                }
+                else {
+                    cursorSpan.classList.remove("typing");
+                    textArrayIndex++;
+                    if(textArrayIndex>=textArray.length) textArrayIndex=0;
+                    setTimeout(type, typingDelay + 1100);
+                }
+            }*/
+
+            document.addEventListener("DOMContentLoaded", function() {
+                if(textArray.length) setTimeout(type,newTextDelay+250);
+            });
+        </script>
+    </body>
+</html>

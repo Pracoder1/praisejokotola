@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Collapsible Navbar</title>
+        <style>
+            body {
+                margin: 0;
+                font-family: Arial, Helvetica, sans-serif;
+            }
+            .navbar {
+                background-color: #333;
+                padding: 15px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+            }
+            .navbar-toggle {
+                cursor: pointer;
+                display: none;
+            }
+            .bar {
+                display: block;
+                width: 25px;
+                height: 3px;
+                background-color: #fff;
+                margin: 5px 0;
+            }
+            .navbar-list {
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+                display: flex;
+            }
+            .navbar-list li {
+                margin-right: 20px;
+            }
+            .navbar-list a {
+                text-decoration: none;
+                color: #fff;
+                font-weight: bold;
+            }
+            .content {
+                padding: 20px;
+            }
+
+            @media only screen and (max-width: 768px) {
+                .navbar-list {
+                    display: none;
+                    flex-direction: column;
+                    width: 100%;
+                    position: absolute;
+                    top: 60px;
+                    left: 0;
+                    background-color: #333;
+                }
+
+                .navbar-list.show {
+                    display: flex;
+                }
+                .navbar-list li {
+                    margin-right: 0;
+                    text-align: center;
+                    padding: 10px;
+                    border-bottom: 1px solid #555;
+                }
+                .navbar-toggle {
+                    display: block;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <div class="navbar">
+            <div class="navbar-toggle" onclick="toggleNavbar()">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="navbar-list">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+        <script>
+            function toggleNavbar() {
+                var navbarList = document.querySelector('.navbar-list');
+                navbarList.classList.toggle('show');
+            }
+        </script>
+
+        <div class="content">
+            <h1>Welcome to our website!</h1>
+        </div>
+    </body>
+</html>
